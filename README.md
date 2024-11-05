@@ -1,4 +1,4 @@
-# Stolen Car Registry API
+# Stolen Car Registry
 
 ## Overview
 The **Stolen Car Registry API** is a centralized platform designed to register, track, 
