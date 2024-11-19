@@ -15,7 +15,7 @@ the chances of vehicle recovery.
    - Register stolen vehicles with comprehensive information.
    - Retrieve and update the status of reported stolen vehicles.
    - Search for vehicles by license plate, VIN, or other identifying information.
-   - Track a vehicle's recovery status in real time.
+   - Track a vehicle's recovery status in real time.  
 
 
 2. **User Features**:
