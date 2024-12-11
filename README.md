@@ -75,21 +75,22 @@ For security, all endpoints (except `/auth/login`) require an authentication tok
 ### Vehicle Endpoints
 
 #### 1. **Register a Stolen Car**
-   - **Endpoint**: `POST /api/stolen-cars`
+   - **Endpoint**: `POST /api/vehicles`
    - **Description**: Registers a new report of a stolen car.
    - **Request Body (JSON)**:
   ```json
   {
-    "car_id": "integer",
-    "images": ["image"],
-    "model": "string",
-    "make": "string",
+    "report_id": "integer",
+    "car_image": ["image"],
+    "car_make": "string",
+    "car_model": "string",
     "color": "string",
-    "license_number": "string",
+    "license_plate_number": "string",
     "vin_number": "string",
-    "year": "integer",
+    "built_year": "integer",
     "stolen_date": "ISO 8601 datetime string",
     "theft_location": "string",
+    "found_location": "string",
     "reported_stolen": true,
     "current_status": ["missing", "found"],
     "type": ["personal", "company", "rental"],
