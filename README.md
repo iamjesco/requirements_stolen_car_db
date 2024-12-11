@@ -80,19 +80,30 @@ For security, all endpoints (except `/auth/login`) require an authentication tok
    - **Request Body (JSON)**:
   ```json
   {
-    "car_model": "string",
-    "car_make": "string",
+    "car_id": "integer",
+    "images": ["image"],
+    "model": "string",
+    "make": "string",
     "color": "string",
-    "license_plate": "string",
+    "license_number": "string",
     "vin_number": "string",
     "year": "integer",
-    "date_time_stolen": "ISO 8601 datetime string",
+    "stolen_date": "ISO 8601 datetime string",
     "theft_location": "string",
     "reported_stolen": true,
-    "reported_stolen_date": "ISO 8601 datetime string",
-    "police_officer": "string",
-    "status": "missing",
-    "images": ["base64 encoded image strings"]
+    "current_status": ["missing", "found"],
+    "type": ["personal", "company", "rental"],
+    "owner": {
+      "user_id": "integer",
+      "name": "string",
+      "id_number": "integer",
+      "email": "string"
+    },
+    "police_report": {
+      "report_id": "integer",
+      "report_officer": "string",
+      "report_date": "datetime"
+    }
   }
   ```
 - **Response**:
